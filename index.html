@@ -1,0 +1,74 @@
+<style>
+body {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .card {
+            width: 300px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.5);
+            text-align: center;
+        }
+
+        .card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .card h2 {
+            color: hotpink;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: hotpink;
+            margin-bottom: 0;
+        }
+    </style>
+<body>
+     <h1>Мы хорошие котята</h1>
+
+    <div class="container">
+        <div class="card">
+            <img src="../../static/media/us_foto/Sveta.png" alt="Свелана Фарбовская" />
+            <h2>Свелана Фарбовская</h2>
+            <p>Закончила Финансовый Университет! Ночной угнитатор!</p>
+        </div>
+
+        <div class="card">
+            <img src="../../static/media/us_foto/Alexey.png" alt="Алексей Ерофеев" />
+            <h2>Алексей Ерофеев</h2>
+            <p>Ездок хоть куда! Всегда поможет!</p>
+        </div>
+
+        <div class="card">
+            <img src="{{url_for('static',filename='media/us_foto/Anna.png')}}" />
+            <h2>Анна Койчиева</h2>
+            <p>Двигатель! Главная драма-квин этой команды...:)</p>
+        </div>
+
+        <div class="card">
+            <img src="../../static/media/us_foto/Artem.png" alt="Артём Антипов" />
+            <h2>Артём Антипов</h2>
+            <p>Няшка-добряшка!</p>
+        </div>
+    </div>
+</body>>
